@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Glide.get(requireContext()).clearMemory();
+        Glide.get(requireContext()).clearMemory()
         binding.rvMovieList.adapter = null
         binding.rvPopular.adapter = null
         binding.rvUpcoming.adapter = null

@@ -54,7 +54,7 @@ class GalleryFragment : Fragment() {
         super.onDestroyView()
 
         binding.rvGallery.adapter = null
-        Glide.get(requireContext()).clearMemory();
+        Glide.get(requireContext()).clearMemory()
         _binding = null
     }
 }

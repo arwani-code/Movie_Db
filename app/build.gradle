@@ -23,6 +23,10 @@ android {
         buildConfigField("String", "API_KEY", API_KEY)
     }
 
+    lintOptions {
+        baseline(file("lint-baseline.xml"))
+    }
+
     buildTypes {
         release {
             minifyEnabled true
